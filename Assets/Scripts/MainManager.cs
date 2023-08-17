@@ -32,7 +32,7 @@ public class MainManager : MonoBehaviour
 
     public void SaveScore()
     {
-        if(highGameScore < gameScore)
+        if(highGameScore < gameScore)  //Only save if a new high score
         {
             SaveData data = new SaveData();
             data.score = gameScore;
@@ -52,6 +52,7 @@ public class MainManager : MonoBehaviour
             string json = File.ReadAllText(path);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
 
+            //Assign vars to be updated and vars holding highs
             gameScore = data.score;
             highGameScore = data.score;
             userName = data.name;

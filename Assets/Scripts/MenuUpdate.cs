@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.IO;
 using TMPro;
 
+// MenuUpdate used to populate Best Score data loaded upon start()
 public class MenuUpdate : MonoBehaviour
 {
     public TextMeshProUGUI userDataText;

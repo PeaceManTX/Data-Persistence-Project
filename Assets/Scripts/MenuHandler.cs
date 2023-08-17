@@ -10,9 +10,8 @@ using UnityEditor;
 
 public class MenuHandler : MonoBehaviour
 {
-    public TextMeshProUGUI userNameText;
+    public TextMeshProUGUI userNameText; // User Name InputText
 
-    //public InputField inputField;
     public void GetName()
     {
         MainManager.Instance.userName = userNameText.text;
